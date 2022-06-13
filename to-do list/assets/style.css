@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(191, 248, 243);
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(149, 12, 240);
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+}
+
+.container h2{
+    padding: 20px;
+}
+
+.inputList{
+    width: 200px;
+    height: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+button {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  #tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  :checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
